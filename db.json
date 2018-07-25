@@ -1,0 +1,79 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "name": "Titanic",
+      "year": "1997"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "date": "2018-03-05",
+      "title": "Pay credit card bill",
+      "status": "done"
+    },
+    {
+      "id": 2,
+      "date": "2018-02-23",
+      "title": "Pay telephone bill",
+      "status": "done"
+    },
+    {
+      "title": "cccccc",
+      "date": "2018-07-12",
+      "status": "done",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "title": "Test",
+      "date": "2018-07-12",
+      "status": "new",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "title": "Test",
+      "date": "2018-07-12",
+      "status": "new"
+    },
+    {
+      "id": 7,
+      "title": "Test",
+      "date": "2018-07-12",
+      "status": "new"
+    },
+    {
+      "id": 8,
+      "title": "Test",
+      "date": "2018-07-12",
+      "status": "new"
+    },
+    {
+      "id": 9,
+      "title": "Test",
+      "date": "2018-07-12",
+      "status": "new"
+    }
+  ]
+}

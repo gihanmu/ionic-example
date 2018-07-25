@@ -10,6 +10,8 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MoviesPage } from '../pages/movies/movies';
+import { MovieService } from '../providers/movie-service/movie-service';
+import { DataService } from '../providers/data-service/data-service';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { MoviesPage } from '../pages/movies/movies';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MovieService,
+    DataService
   ]
 })
 export class AppModule {}
