@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { MovieService } from '../../providers/movie-service/movie-service';
+import { Movie } from '../../models/movie';
 
 /**
  * Generated class for the MoviesPage page.
@@ -14,8 +16,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'movies.html',
 })
 export class MoviesPage {
+  public movies : Movie[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public _moveService : MovieService
+  ) {
+    this.getAllMovies();
+  }
+
+  public getAllMovies(){
+    this._moveService.findAll()
+    .subscribe(
+      data => {
+        this.movies = data;
+
+      }
+    )
   }
 
   ionViewDidLoad() {

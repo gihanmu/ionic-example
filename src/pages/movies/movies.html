@@ -7,3 +7,12 @@
   </ion-navbar>
 </ion-header>
 
+
+<ion-content>
+  <ion-list no-lines>
+    <button ion-item *ngFor="let movie of movies">
+      {{ movie.name }}
+    </button> 
+  </ion-list>
+</ion-content>
+

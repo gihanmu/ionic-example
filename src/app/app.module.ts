@@ -12,6 +12,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MoviesPage } from '../pages/movies/movies';
 import { MovieService } from '../providers/movie-service/movie-service';
 import { DataService } from '../providers/data-service/data-service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DataService } from '../providers/data-service/data-service';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
